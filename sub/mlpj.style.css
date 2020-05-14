@@ -1,0 +1,359 @@
+body {
+  font-family: Overpass;
+  background: #2b3c4b;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: #fdcb59;
+  font-family: Chivo;
+}
+
+p {
+  color: white;
+}
+
+i {
+  opacity: 0.7;
+}
+
+/* liens */ 
+a:hover {
+font-weight: bold;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+
+/*Machine learning PAGE*/
+.pjheader {
+  background:#2b3c4b;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  border-bottom:5px solid #fdcb59;
+  height:30px;
+  top: 0;
+  width:100%;
+  background-attachment: fixed;
+  position: fixed;
+  z-index:3;
+
+}
+
+#nav2 {
+  width:100%;
+  margin: 0;
+  text-align: right;
+  display: inline;
+}
+#nav2 li {
+  display: inline;
+  list-style: none;
+}
+#nav2 a {
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+#nav2 h1{
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+.mlbanner {
+  background-image: url(../images/ai.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  border-bottom: 5px solid #fdcb59;
+}
+
+
+.mlbanner h1 {
+  color: white;
+  font-size: 45px;
+  margin: 0;
+}
+
+.mlbanner p {
+  color: white;
+  font-size: 24px;
+}
+
+/*PAGE*/
+
+.mlcontainer {
+  width: 900px;
+  margin: auto;
+}
+
+
+.wrapper_three{
+  display: grid;
+  grid-template-columns: 900px;
+  text-align: justify;
+  padding:30px;
+}
+
+.wrapper_three p {
+  color: white;
+  font-size: 18px;
+}
+
+
+.image {
+  background: white;
+  opacity: 0.8;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  text-align: center;
+  grid-template-columns: 450px 450px;
+  width: 850px;
+  height: 300px;
+  padding: 24px;
+  margin: 0;
+}
+
+.subimage {
+  display: grid;
+  text-align: left;
+}
+
+.image p{
+  display: inline;
+  text-align: left;
+  color: black;
+  opacity: .7;
+}
+
+.mlcard {
+  display: grid;
+  grid-template-columns: 400px 350px;
+  grid-gap: 60px;
+  grid-row-gap: 100px;
+  grid-column-gap: 60px;
+}
+.mlcard {
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 850px;
+  padding: 24px;
+  margin: 0;
+}
+.mlcard h3 {
+  margin-bottom: 0;
+}
+
+.mlsubcarda {
+  width: 400px;
+  text-align: left;
+  padding: 24px;
+
+}
+.mlsubcarda figcaption {
+  text-align: center;
+  color: #fdcb59;
+  opacity: .7;
+  
+}
+.mlsubcarda img {
+  width: 430px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+.mlsubcarda h3 {
+  margin-bottom: 0;
+}
+
+.mlsubcardb {
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 350px;
+  text-align: justify;
+  padding: 24px;
+  margin: 3px;
+}
+
+
+.image2 {
+  background: white;
+  opacity: 0.9;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 850px;
+  text-align: left;
+  padding: 24px;
+  margin: 3px;
+}
+.image2 figcaption {
+  text-align: center;
+  color: black;
+  opacity: .7;
+  
+}
+.image2 img {
+  width: 850px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+
+.image3 {
+  background: white;
+  opacity: 0.9;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 850px;
+  text-align: left;
+  padding: 24px;
+  margin: 3px;
+}
+.image3 figcaption {
+  text-align: center;
+  color: black;
+  opacity: .7;
+  
+}
+.image3 img {
+  width: 850px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.mlcard2 {
+  display: grid;
+  grid-template-columns: 330px 400px;
+  grid-gap: 60px;
+  grid-row-gap: 100px;
+  grid-column-gap: 60px;
+}
+.mlcard2 {
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 850px;
+  padding: 24px;
+  margin: 0;
+}
+
+.mlsubcarda3 {
+  background: white;
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 330px;
+  text-align: left;
+  padding: 24px;
+  margin: 3px;
+}
+.mlsubcarda3 figcaption {
+  text-align: center;
+  color: black;
+  opacity: .7;
+  
+}
+.mlsubcarda3 img {
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.mlsubcarda3 video{
+  width: 320px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.mlsubcardb2 {
+  background: white;
+  opacity: 0.9;
+  border-radius: 4px;
+  width: 400px;
+  text-align: left;
+  padding: 24px;
+  margin: 3px;
+}
+.mlsubcardb2 figcaption {
+  text-align: center;
+  color: black;
+  opacity: .7;
+  
+}
+.mlsubcardb2 img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+/*Pre-Footer*/
+
+
+.zone {
+  background: black;
+  grid-gap: 40px;
+  text-align: center;
+  padding:15px;
+}
+
+.zonea {
+  display: inline;
+  grid-gap: 40px;
+  text-align: center;
+  padding:15px;
+}
+
+
+.zonea p{
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+}
+
+.zonea img {
+  width:25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+/*Footer*/
+
+.footer {
+  background: #2b3c4b;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #f0c40f;
+}
+
+.fbutton{
+  background-color: #d4ac3a;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.fbutton:hover {
+  background-color: #0D1EC6;
+  color: white;
+}
+

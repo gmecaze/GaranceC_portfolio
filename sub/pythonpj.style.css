@@ -1,0 +1,344 @@
+head {
+  z-index:2;
+}
+
+
+body {
+  font-family: Overpass;
+  margin: 0;
+  z-index:1;
+}
+
+h1, h2, h3 {
+  color: #404042;
+  font-family: Chivo;
+}
+
+p {
+  color: #404042;
+  opacity: .7;
+}
+
+#lienpy {
+text-decoration: underline;
+color: #113e65;
+}
+
+/*lien */ 
+a:hover {
+font-weight: bold;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+
+/*PYTHON PAGE*/
+.pjheader {
+  background:#2b3c4b;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  border-bottom:5px solid #fdcb59;
+  height:30px;
+  top: 0;
+  width:100%;
+  background-attachment: fixed;
+  position: fixed;
+  z-index:3;
+
+}
+
+#nav2 {
+  width:100%;
+  margin: 0;
+  text-align: right;
+  display: inline;
+}
+#nav2 li {
+  display: inline;
+  list-style: none;
+}
+#nav2 a {
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+#nav2 h1{
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+
+.pybanner {
+  background-image: url('../images/network1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  border-bottom: 5px solid #fdcb59;
+}
+
+.pybanner h1 {
+  color: white;
+  font-size: 50px;
+  margin: 0;
+}
+
+.pybanner p {
+  color: white;
+  font-size: 24px;
+}
+
+.pycontainer {
+  width: 100%;
+  margin: auto;
+}
+
+
+.wrapper_a{
+  position: relative;
+  width:885px;
+  display: grid;
+  text-align: justify;
+  padding-left: 200px;
+  padding-top: 30px;
+}
+
+.wrapper_a h1 {
+  color: #fdcb59;
+}
+
+.wrapper_a h2 {
+  color: #113e65;
+}
+
+
+.pycard {
+  display: grid;
+  align-content: center;
+  background: #2b3c4b;
+  padding: 50px;
+  border-bottom: 20px double #fdcb59;
+}
+
+/* SLIDER*/ 
+
+#pyslider {
+    position: relative;
+    left: 150px;
+    width: 885px;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 500px;
+}
+
+#pyslides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+    animation-name: slides_animées;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#pyslides:hover {
+    animation-play-state: paused;
+}
+
+#pyslides figure {
+    display: inline-block;
+    width: 70vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#pyslides figure img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#pyslides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.dots_commands  {
+    position: absolute;
+    bottom: 0;
+    width: 70vw;
+    padding:0;
+    margin: 0;
+    text-align: center;
+}
+
+.dots_commands li {
+    display: inline;
+    padding:0; margin:0;
+}
+
+.dots_commands label {
+    position: relative;
+    display: inline-block;
+    height:8px; 
+    width: 8px;
+    margin: 0 5px;
+    text-indent: -9999px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.55) inset;
+    cursor: pointer;
+}
+
+.dots_commands label:active {
+    outline: none;
+    background: dodgerblue;
+}
+
+
+#play {
+    position: absolute;
+    cursor: pointer;
+    bottom: 2em;
+    right: 2em;
+    width: 0;
+    height: 0;
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid rgba(255,255,255,0.7);
+    display: none;
+    text-indent: -9999px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]#show_slide1a:checked ~ nav .dots_commands li:nth-of-type(1) label,
+input[type="radio"]#show_slide2a:checked ~ nav .dots_commands li:nth-of-type(2) label,
+input[type="radio"]#show_slide3a:checked ~ nav .dots_commands li:nth-of-type(3) label,
+input[type="radio"]#show_slide4a:checked ~ nav .dots_commands li:nth-of-type(4) label,
+input[type="radio"]#show_slide5a:checked ~ nav .dots_commands li:nth-of-type(5) label,
+{
+    outline: none;
+    background: dodgerblue;
+}
+
+input[type="radio"]#show_slide1a:checked ~ div#pyslides {
+    animation: none;
+    left: 0;
+}
+
+input[type="radio"]#show_slide2a:checked ~ div#pyslides {
+    animation: none;
+    left: -70vw;
+}
+
+input[type="radio"]#show_slide3a:checked ~ div#pyslides {
+    animation: none;
+    left: -140vw;
+}
+input[type="radio"]#show_slide4a:checked ~ div#pyslides {
+    animation: none;
+    left: -210;
+}
+
+input[type="radio"]#show_slide5a:checked ~ div#pyslides {
+    animation: none;
+    left: -280vw;
+}
+
+
+
+input[type="radio"]:not(:nth-last-of-type(1)):checked ~ nav label#play {
+    display: block;
+}
+
+input[type="radio"]#play:checked ~ div#pyslides {
+    animation-name: slides_animées;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes slides_animées {
+    0%, 8%, 100%{
+        left: 0; /*1ère image*/
+    }
+    17%, 25%{
+        left: -70vw; /*2ème image*/
+    }
+    35%, 45%{
+        left: -140vw; /*3ème image*/
+    }
+    55%, 65%{
+        left: -210vw; /*4ème image*/
+    }
+    75%, 95%{
+        left: -280vw; /*5ème image*/
+    }
+  }
+
+/*Pre-Footer*/
+
+
+.zone {
+  background: black;
+  grid-gap: 40px;
+  text-align: center;
+  padding:15px;
+}
+
+.zone p{
+  color: white;
+  opacity: 1;
+  font-size: 15px;
+}
+
+
+
+/*Footer*/
+
+.footer {
+  background: #2b3c4b;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #f0c40f;
+  opacity:1;
+}
+
+.fbutton{
+  background-color: #d4ac3a;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.fbutton:hover {
+  background-color: #0D1EC6;
+  color: white;
+}

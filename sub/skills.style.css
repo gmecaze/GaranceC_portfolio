@@ -1,0 +1,298 @@
+body {
+  font-family: Overpass;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #404042;
+  font-family: Chivo;
+}
+
+p {
+  color: #404042;
+  opacity: .7;
+}
+
+a {
+text-decoration: none;
+color: black;
+}
+
+a:hover {
+font-weight: bold;
+}
+
+/*-- Skills page --*/
+
+.skheader {
+  background:#2b3c4b;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  border-bottom:5px solid #fdcb59;
+  height:30px;
+  top: 0;
+  width:100%;
+  background-attachment: fixed;
+  position: fixed;
+  z-index:3;
+
+}
+
+#nav1 {
+  width:100%;
+  margin: 0;
+  text-align: right;
+  display: inline; 
+}
+#nav1 li {
+  display: inline;
+  list-style: none;
+}
+#nav1 a {
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+#nav1 h1{
+  color:#fdcb59;
+  display:inline-block;
+  margin: 0 30px;
+}
+
+
+.skcontainer {
+  background: white;
+  width: 870px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.skcontainer h2{
+  color: #113e65;
+  border-bottom: 3px solid #113e65;
+}
+
+.skcontainer h3{
+  color: #113e65;
+}
+
+.skbanner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/skillbig.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+  border-bottom: 10px solid #fdcb59;
+}
+
+.skbanner h1 {
+  color: #fdcb59;
+  font-size: 45px;
+  margin: 0;
+}
+
+.skbanner p {
+  color: #fdcb59;
+  font-size: 24px;
+  opacity:0.9;
+}
+
+.skcard {
+  display: grid;
+  grid-template-columns: 140px 500px;
+  grid-gap: 60px;
+  grid-row-gap: 60px;
+  grid-column-gap: 60px;
+}
+.skcard {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 800px;
+  text-align: right;
+  padding: 24px;
+  margin: 8px;
+}
+
+
+.skcard h3 {
+  color: #2b3c4b;
+  margin-bottom: 0;
+}
+
+.sksubcarda {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 130px;
+  text-align: left;
+  padding: 24px;
+  margin: 3px;
+}
+
+.sksubcarda img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.sksubcarda h3 {
+  margin-bottom: 0;
+}
+
+.sksubcardb {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 545px;
+  align-items: center;
+  padding: 24px;
+  margin: 3px;
+}
+
+.sksubcardb p{
+  text-align: justify;
+}
+
+.skbutton{
+  background-color: #fdcb59;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.skbutton:hover {
+  background-color: #0D1EC6;
+  color: white;
+}
+
+.wrapper_one {
+  display: grid;
+  grid-template-columns: 700px ;
+}
+
+.footer {
+  background: #2b3c4b;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: #f0c40f;
+  opacity: 1;
+}
+
+.fbutton{
+  background-color: #d4ac3a;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.fbutton:hover {
+  background-color: #0D1EC6;
+  color: white;
+}
+
+
+
+/* Volet Skillspage */
+#volet {
+  width: 225px;
+  padding: 10px;
+  background:#2b3c4b; 
+  border-radius: 0 4px 4px 0;
+}
+
+#volet h3{
+  color:#fdcb59;
+}
+
+#volet a{
+  color:#fdcb59;
+}
+
+#volet a.ouvrir {
+  padding: 5px 25px;
+  background: #fdcb59;
+  color: #2b3c4b;
+  text-decoration: none;
+}
+
+#volet {
+  position: fixed;
+  left: -270px; top: 55px;
+}
+
+#volet a.ouvrir {
+  position: absolute;
+  right: -88px;
+  top: 105px;
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  border-radius: 0 0 8px 8px;
+}
+
+#volet {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+#volet:target {
+  left: 0;
+}
+
+#volet a.fermer {
+  padding: 10px 25px;
+  background: #fdcb59;
+  color: #2b3c4b;
+  text-decoration: none;
+}
+
+#volet a.fermer {
+position: absolute;
+  right: -68px;
+  top: 105px;
+  -ms-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+
+  border-radius: 0 0 8px 8px;
+}
+
+#volet a.fermer {
+  display: none;
+}
+
+#volet_clos:target #volet {
+  left: -270px;
+}
+
+#volet:target a.ouvrir {
+  display: none;
+}
+#volet:target a.fermer {
+  display: block;
+}
+
+ 
+
+
+
+
+
+
+ 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Machine Learning</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="mlpj.style.css">
+</head>
+<body>
+    <!-- Banner section -->
+ <div class="pjheader">
+      <ul id="nav2">
+      <li><h1>PORTFOLIO</h1></li>
+      <li><a href="../index.html">Home</a></li><li><a href="skillspage.html">Skills</a></li><li><a href="projectspage.html">Projects</a></li><li><a href="about.html">About</a></li>
+      </ul>
+  </div>
+ <div class="mlbanner">
+    <h1>Machine Learning Tools</h1>
+  </div>
+  <!-- Container -->
+  <div class="mlcontainer">
+
+    <!-- Wrapper -->
+    <div class="wrapper_three" align='justify'>
+    <!-- TEXT-->
+      <h2 id="dataiku">Dataiku</h2>
+      <br>
+      <p>Dataiku is a collaborative software platform, which enables you to explore, prepare, analyse, build, develop, deploy, etc. your own data. </p>
+      <br>
+      <h3>Predicting Housing Value</h3>
+      <br>
+      <p>This project is an in-class project using regression to predict housing price value in California.</p>
+      <br>
+      <div class="image">
+        <img width="800" height= "300" src="../images/flowdataiku.JPG" alt="flowdataiku"/>
+      </div>
+      <br>
+      <p>This diagram represents every single step made from loading datasets to predicting median house value for the <i>"housing to predict"</i> dataset.</p>
+      <br>
+      <h3>Data preparation</h3>
+      <br>
+      <p> We started by loading our datasets: <i>Housing_topredict</i> and <i>Housing_historic</i>, then we stacked them to enable similar preparation in both training and output datasets. Then, I went directly to the 'Lab' to create a Jupiter Notebook and plot the following graphs:</p>
+      <br>
+      <h4>Python Plot</h4>
+      <br>
+        <div class='image2'>
+          <figcaption>Data Visualization with Python</figcaption>
+          <br>
+          <img src="../images/plot.JPG" alt="" align=left>
+        </div>
+      <br>
+      <p> These plots are usefull to visualize your data and it allows you to see whether you need to scale them or not. Scaling is used when you have to deal with huge values as predicators (billions for example). Indeed, it could reduce the regression coefficient to a very small magnitude which would be very annoying to understand when reading your output (e.g 10^-9). Here, we did not have the problem but in some cases, it may be intersting to scale those variables. </p> 
+      <br>
+      <p>Then, we created two columns: <br>
+        <i>- GeoPoint</i> <br>
+        <i>- FamilySize</i> <br>
+      <i>GeoPoint</i> was made using a pre-prepared formula that allows you to create geopoints using latitude and longitude columns. It enabled us to make a scatter map later.
+      <i>FamilySize</i> had a little problem: When analyzing it we realized that we had extrem values, such as family size of 1200 people... We decided to fix this problem in later steps.  </p>
+      <br>
+      <h3>Correlation study</h3>
+      <br>
+      <p>Now that we have prepared our data, we can start working on correlations.                                                     </p>
+      <br>
+      <h4><i>Scatter Map</i></h4>
+      <br>
+      <div class="mlcard">
+        <div class='mlsubcarda'>
+        <figcaption>Correlation Map</figcaption>
+        <br>
+        <img src="../images/scattermap.jpg" alt="" align=left>
+        </div>
+        <div class='mlsubcardb'>
+          <br>
+          <p> Here, we made a scatter map using 'GeoPoint' and 'median_housing_price_value'.</p> 
+          <br>
+          <p>This confirmed the correlation between housing price value and the location of houses.</p>
+          <br>
+          <p>Indeed, we can clearly see that the nearest the house is from the ocean, the most expensive it is. </p>
+        </div>
+      </div>
+        <br>
+      <h4><i>Scatter Plot</i></h4>
+      <br>
+        <div class='image2'>
+          <figcaption>Correlation plot</figcaption>
+          <br>
+          <img src="../images/correlation.JPG" alt="" align=left>
+        </div>
+      <br>
+      <p> Here, we made a scatter plot using 'median_income' and 'median_housing_price_value' as X and Y. Moreover, we added the 'ocean proximity' in the color.</p> 
+      <br>
+      <p>This confirmed the correlation between housing price value and the median income of the area: the higher is the median income ; the higher is the price value of housing.</p>
+      <br>
+      <p>Besides, the colors representing location confirmed the previous map : the closest from the ocean ; the more expensive it is. </p>
+      <br>
+      <h4>Split and train</h4>
+      <br>
+      <p>At this point, we still had to remove the extrem values on our FamilySize column. For this, we limited the values of this column to 5 times the IQR (Inter Quartile Range). We lost 51 rows doing this, but we got rid of the extrem values.</p>
+      <br>
+      <p>Then, we splitted the data into <i>historical</i> data and <i>to predict</i> data by filtering the rows where <i>_median_housing_price_value_</i> was defined. This enabled us to have two different datasets: one to train our model, and the other to predict the price value.</p>
+      <br>
+      <div class="mlcard">
+        <div class='mlsubcarda'>
+        <figcaption>Results</figcaption>
+        <br>
+        <img src="../images/result.jpg" alt="" align=left>
+        </div>
+        <div class='mlsubcardb'>
+          <br>
+          <p>Before training models, we chose to output the RMSE (Root Square Mean Error) metric. Then, we trained the model using <i>'Quick models'</i> from the Lab.</p>
+          <br>
+          <p>On this graph, the blue line represents RMSE for the Ridge(L2) Regression model, whereas the orange line represents Random Forest training model. We can see here that Random forest has a longer computing time, however, it is a better model for predicting housing value since its RMSE is lower. </p>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class='image3'>
+          <figcaption>Model's Scatter Plot</figcaption>
+          <br>
+          <img src="../images/scatterplot.JPG" alt="" align=left>
+      </div>
+      <br>
+      <p> This scatter plot enabled us to see the correlation between predicted values and actual values. On this graph, the closest is a point from the line ; the smaller is the error in prediction. Since points are well partitioned around the line, we can say that the prediction is rather well made. Therefore, we chose this model for predicting median house value on 'topredict'. </p> 
+      <br>
+        <br>
+      <div class='image2'>
+          <figcaption>Decision Tree Example</figcaption>
+          <br>
+          <img src="../images/RF.JPG" alt="" align=left>
+      </div>
+      <br>
+      <p> This decision tree is one tree of the random forest. It confirmed our correlation study: two of the most important variables were : <i>median income</i> and <i>ocean proximity</i>. This was also confirmed by the result page of our training. </p> 
+      <br>
+      <h3>Deployment and prediction</h3>
+      <br>
+      <p>Finally, we deployed the model and applied a prediction recipe using Random Forest. And this is how we got our final result: <i>topredict_scored.</i></p>      
+      <br>
+      <p>To present the project, we created a <i>WIKI</i> (a document explaining our work) and we published it on the dashboard with the previous graphs.</i></p>      
+      <br>
+      <p>This project was one among three differents ones on Dataiku, which I selected because I had already mentioned other projects using classification and I wanted to develop one regression model.</p>      
+      <br>
+      <br>
+
+    <!--IBM-->
+      <h2 id="watson">IBM Watson Assistant</h2>
+      <br>
+      <h3>Coffee-bot</h3>
+      <br>
+      <p>Coffee-bot is my first Chatbot. It was made in class using IBM Watson assistant. It deals with coffee related questions: ordering a coffee, asking for the price, menu or nearest café.</p>
+      <br>
+      <div class="mlcard2">
+        <div class='mlsubcarda3'>
+        <figcaption>Coffe-Bot</figcaption>
+        <br>
+        <video controls="controls" src="../video/coffeebot.mp4">Tableau Software</video>
+        </div>
+        <div class='mlsubcardb2'>
+        <figcaption>Extract of the Dialog</figcaption>
+        <br>
+        <img src="../images/dialog1.JPG" alt="" align=left>
+          <br>
+        </div>
+      </div>
+      <br>
+      <p>In the video, you can see short conversations with Coffee-Bot, whereas on the dialog diagram you can see how each intent is ordered to enable Coffee-bot to understand your request and answer properly. As you can see, each sub-question (price, location, menu) <i>'jumps back to'</i> ordering a beverage. This was made on purpose to incite users to order something. </p>
+    </div>     
+  </div>
+  <div class="zone">
+    <div class="zonea">
+      <p>If only I could predict my chances of being recruited soon...</p>
+      <img src="../images/chance.png">
+    </div>
+  </div> 
+    
+<!-- Footer section -->
+  <div class="footer">
+    <p>Made with ❤️ by Garance C.</p>
+    <a href="https://www.linkedin.com/in/garance-caze/" target="_blank" class="fbutton">My Linkedin</a>
+    <a href="mlpj.html" class="fbutton">Back to top</a>
+  </div>
+</body>
+</html>   

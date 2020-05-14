@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Data Visualization</title>
+
+  <!-- Change these Google fonts with your own choice -->
+  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="datavizpj.style.css">
+</head>
+<body>
+  <!-- Banner section -->
+ <div class="pjheader">
+      <ul id="nav2">
+      <li><h1>PORTFOLIO</h1></li>
+      <li><a href="../index.html">Home</a></li><li><a href="skillspage.html">Skills</a></li><li><a href="projectspage.html">Projects</a></li><li><a href="about.html">About</a></li>
+      </ul>
+  </div>
+  <div class="dvbanner">
+    <h1>Data Visualization</h1>
+  </div>
+  <!-- Container -->
+  <div class="dvcontainer">
+    <!-- TEXT-->
+      <h2 id="tableau">Tableau</h2>
+      <br>
+      <p>Tableau is my favorite tool when it comes to data visualization. I know that some people prefer Power Bi because it allows you to download many different types of graphs, but personnaly I rather use Tableau since you can (almost) always create your chart on your own. </p>
+      <br>
+      <div class="image">
+        <div class= "subimage">
+          <img width="400" height="250"src="../images/sankey.jpg">
+        </div>
+        <div class= "subimage">
+          <img width="400" height="250"src="../images/sankeyhover.jpg">
+        </div>
+      <p> Sankey Chart created on Tableau</p> <p> Sankey Chart using 'hover' action</p>
+      </div>
+      <br>
+      <p>Here, you can see a Sankey Chart created on Tabeau. It often requires to edit your dataset and double it. For this specific chart, you need to create each part (left side, center, right side) apart and then, you gather them into a single chart in the dashboard. It is not very complex, but you need to create many bins and calculated fields, therefore, it requires a little bit of technique. This example was used for a sentiment analysis, in which I was trying to highlight the impact of each continent on the overall negative sentiment towards the brand.  </p>
+      <br>
+      <br>
+      <h1>Sentiment Analysis</h1>
+      <br>
+      <p>This project was given by our data visualization teacher and the goal here was to find the reputational risk of a compagny. As the data where considered private, I have made this project anonymous. In the video below, I am shortly presenting my work on this specific project.</p>
+      <br>
+      <iframe width="885" height="500" src="https://www.youtube.com/embed/65C0GCEX-1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <br>
+      <h1>The App Developer</h1>
+      <br>
+      <p>This project was another school project to discover Tableau. It was our first project with the tool, therefore it is simpler but very different. This project was a group project and I share the credit with a classmate ! </p>
+      <br>
+        <div id="dvslider">
+            <input type="radio" id="show_slide1b" name="slider_commands">
+            <input type="radio" id="show_slide2b" name="slider_commands">
+            <input type="radio" id="show_slide3b" name="slider_commands">
+            <input type="radio" id="show_slide4b" name="slider_commands">
+            <input type="radio" id="play_slider" name="slider_commands">
+          <div id="dvslides">
+            <figure id="slide1b">
+              <img src="../images/AppDashboard.png" alt="Tableau Dashboard">
+              <figcaption>The App Developer</figcaption>
+            </figure>
+            <figure id="slide2b">
+              <img src="../images/App2.png" alt="Average Rating">
+              <figcaption>Rating & votes</figcaption>
+            </figure>
+            <figure id="slide3b">
+              <img src="../images//App3.png" alt="Parameters">
+              <figcaption>Parameters</figcaption>
+            </figure>
+            <figure id="slide4b">
+              <img src="../images//App4.png" alt="Number of Apps">
+              <figcaption>Number of Apps</figcaption>
+            </figure>
+          </div>
+            <nav>
+              <ul class="dots_commands">
+                <li><label for="show_slide1b">Slide 1</label></li>
+                <li><label for="show_slide2b">Slide 2</label></li>
+                <li><label for="show_slide3b">Slide 3</label></li>
+                <li><label for="show_slide4b">Slide 4</label></li>
+              </ul>
+              <label for="play_slider" aria-label="Play" id="play" title="Play">Play</label>
+            </nav>
+        </div>
+      <br>
+      <h3>Hotels' Distribution Analysis</h3>
+      <br>
+      <p>I have spent the last two hours on this project and I am glad to present it to you. This was made to show my skills using Tableau, therefore, do not focus on the analysis itself. I have created another special chart for this video: the <B>radio pie chart</B> that you will see on the first slide. </p>
+      <br>
+      <iframe width="885" height="500" src="https://www.youtube.com/embed/SLha9h5wzYQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <br>
+  <!-- POWER BI-->
+      <h2 id="powerbi">Power BI</h2>
+      <br>
+      <p>As I explained before, Power BI is not my favorite data visualization tool since it is less 'creative', however it is a very interesting tool, if you work on Windows... </p>
+
+      <p>What is very cool with Power BI for visualization is the possibility to download extra type of charts: gauge, sankey, etc. Did you try the shark one ? Useless but so funny!</p>
+      <br>
+      <h3>Sentiment Analysis</h3>
+      <br>
+      <p>This project is the same project than the one I presented in Tableau. Therefore, I am not going to explain everything. The exercise here was to use different tools to analyse the same dataset, to understand the differences between Power BI and Tableau. I changed the focus on that one and I studied the impact of continents' negativity on the overall sentiment towards the brand.  </p>
+      <br>
+      <div id="dvslider">
+            <input type="radio" id="show_slide1c" name="slider_commands">
+            <input type="radio" id="show_slide2c" name="slider_commands">
+            <input type="radio" id="show_slide3c" name="slider_commands">
+            <input type="radio" id="play_slider" name="slider_commands">
+          <div id="dvslides2">
+            <figure id="slide1c">
+              <img src="../images/NorthAmerica.png" alt="Focus on North America">
+              <figcaption>Focus on North America</figcaption>
+            </figure>
+            <figure id="slide2c">
+              <img src="../images/Asia.png" alt="Asian impact">
+              <figcaption> Focus on Asia</figcaption>
+            </figure>
+            <figure id="slide3c">
+              <img src="../images//Overall.png" alt="North America's negativity">
+              <figcaption>North America's negativity</figcaption>
+            </figure>
+          </div>
+            <nav>
+              <ul class="dots_commands">
+                <li><label for="show_slide1c">Slide 1</label></li>
+                <li><label for="show_slide2c">Slide 2</label></li>
+                <li><label for="show_slide3c">Slide 3</label></li>
+              </ul>
+              <label for="play_slider" aria-label="Play2" id="play2" title="Play2">Play</label>
+            </nav>
+        </div>
+      <br>
+      <br>
+    </div> 
+  </div> 
+<div class="zone">
+  <div class="zonea">
+      <p>Tableau vs Power BI</p>
+      <img src="../images/vs.png">
+  </div>
+</div>
+   
+<!-- Footer section -->
+  <div class="footer">
+    <p>Made with ❤️ by Garance C.</p>
+    <a href="https://www.linkedin.com/in/garance-caze/" target="_blank" class="fbutton">My Linkedin</a>
+    <a href="datavizpj.html" class="fbutton">Back to top</a>
+  </div>
+</body>
+</html>   

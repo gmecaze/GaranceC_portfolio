@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Python</title>
+  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pythonpj.style.css">
+</head>
+<body>
+  <!-- Header section -->
+  <div class="pjheader">
+      <ul id="nav2">
+      <li><h1>PORTFOLIO</h1></li>
+      <li><a href="../index.html">Home</a></li><li><a href="skillspage.html">Skills</a></li><li><a href="projectspage.html">Projects</a></li><li><a href="about.html">About</a></li>
+      </ul>
+  </div>
+<!-- SubBanner-->
+  <div class="pybanner">
+    <h1>Python's Projects and Certifications </h1>
+  </div>
+
+  <!-- Container -->
+  <div class="pycontainer">
+    <!-- Wrapper -->
+    <div class="wrapper_a" align='justify'>
+    <!-- INTRO-->
+      <h1>Certifications</h1>
+      <br>
+      <p>I have started Python a few months ago at school. We started with a bootcamp to learn how to use Pandas, NumPy and Matplotlib. Then, we had extra courses in DataScience using python. We learned many other things such as seaborn, 'datetime' and 're' module, text mining and simplified text processing. Finally, I decided to choose Machine Learning with Python among my electives, to dig further into the field of analytics. It allowed me to discover scikitlearn and its applications for machine learning.</p>
+      <br>
+      <p>On this page, you will see my latest certifications : 'Marketing Analytics with Python', and you will find two of my Machine Learning Projects : the famous Titanic Case, and a private case dealing with bank customers.</p>
+      <br>
+      <br>
+    </div> 
+  <!-- CERTIFICATIONS-->
+    <div class=pycard>
+        <div id="pyslider">
+            <input type="radio" id="show_slide1a" name="slider_commands">
+            <input type="radio" id="show_slide2a" name="slider_commands">
+            <input type="radio" id="show_slide3a" name="slider_commands">
+            <input type="radio" id="show_slide4a" name="slider_commands">
+            <input type="radio" id="show_slide5a" name="slider_commands">
+            <input type="radio" id="play_slider" name="slider_commands">
+          <div id="pyslides">
+            <figure id="slide1a">
+              <img src="../images/certifpython.jpg" alt="Introduction to SQL">
+              <figcaption>Introduction to SQL</figcaption>
+            </figure>
+            <figure id="slide2a">
+              <img src="../images/python1.jpg" alt="Predicting Customer Churn with Python">
+              <figcaption>Predicting Customer Churn with Python</figcaption>
+            </figure>
+            <figure id="slide3a">
+              <img src="../images//python2.jpg" alt="Customer Analitics and A/B testing in Python">
+              <figcaption>Customer Analitics and A/B testing in Python</figcaption>
+            </figure>
+            <figure id="slide4a">
+              <img src="../images//python3.jpg" alt="Customer segmentation in Python">
+              <figcaption>Customer segmentation in Python</figcaption>
+            </figure>
+            <figure id="slide5a">
+              <img src="../images//python4.jpg" alt="Machine Learning for Marketing in Python">
+              <figcaption>Machine Learning for Marketing in Python</figcaption>
+            </figure>
+          </div>
+            <nav>
+              <ul class="dots_commands">
+                <li><label for="show_slide1a">Slide 1</label></li>
+                <li><label for="show_slide2a">Slide 2</label></li>
+                <li><label for="show_slide3a">Slide 3</label></li>
+                <li><label for="show_slide4a">Slide 4</label></li>
+                <li><label for="show_slide5a">Slide 5</label></li>
+              </ul>
+              <label for="play_slider" aria-label="Play" id="play" title="Play">Play</label>
+            </nav>
+        </div>
+    </div>
+    <!-- Project-->
+    <div class="wrapper_a">
+      <h1>Projects</h1>
+      <br>
+      <h2>Titanic Survival</h2>
+      <br>
+      <p>This famous machine learning case deals with two datasets containing many passengers' information (sex, age, cabin, name, passenger ID, etc.). One of them contains an extra information : 'Survived'. Did the passenger survived or not? The second dataset does not have this information simply because the goal is to predict whether or not each passenger would have survived if it had been onboard the Titanic. </p>
+      <br>
+      <p>This case is using supervised machine learning because the output will depend on labeled input. It is a classification case : Would it have survived or not? (closed question: yes or no). Indeed, thanks to the input dataset where each passengers were labeled with survived(1) or not survived(0), the algorithm will be able to find patterns among those passengers to understand which element of their profile was decisive for their survival and then it will look for similar patterns into the second dataset to label each new passenger with 'survived' or 'not survived' and we will have our prediction. </p>
+      <br>
+      <p>You will find the HTML page of the Jupyter Notebook here: <a href="TitanicCase.html" target="_blank" id="lienpy">Titanic Case</a>!</p>
+      <br>
+      <p>I know it is not perfect, but I am already very proud to be able to do this kind of project in total autonomy after only few weeks of practice. Besides, it entertained me for a day during quarantine !  </p>
+      <br>
+      <br>
+      <h2>Banking Case</h2>
+      <h3>Predicting offer acceptance among customers, and related revenue</h3>
+      <br>
+      <p>Unfortunately, this project was made using private data and I can't share it publicly. It was a group project and I equally share the credit with two others students from my cohort. </p>
+      <br>
+      <p>For this project, we went through the datasets to understand the data, and acknowledge the business problem: Among a list of nearly 700 customers, <B>we had to select 100 clients that would be more inclined to accept an offer, if only sent once.</B> This meant find clients who were more likely to accept an offer and then, predict the revenue that they would produce to list only the top 100 of best potential contributors.<p>
+      <br>
+      <p>This project was also a supervised learning project, but this time we had to use both classfication and regression, to answer two questions: Would they accept the offer (yes/no)? How much would they spend? </p>
+      <p>The dataset had three different offers, also we had to make the analysis for each different offer. We started by preparing our data (type, NaN, etc.). Then, we divided the dataset into train and test set, and we applied many different classifiers, and regressors to our training set. </p>
+      <br>
+      <p> As we had a clear problem of underfitting, we went back to the previous step of our project and we decided to choose specific features to improve the results of our models.
+      At this point we created four new features, and we decided to study the correlation of attributes, then we kept only the 15 best of them for each Sale and Revenue. </p>
+      <p>Unfortunately, because of lack of time, our feature engineering was not good enough and therefore, it did not change much in our results. However, we understood the concept of playing with features to improve models.</p>
+      <p>Then, we selected the most promissing models and we tuned them using either <i>"grid_search"</i> or <i>"RandomizedSearchCV"</i>. Once the results were optimized, we applied our models to the testing set.</p>
+      <p>For classication our result were really interesting: the confusion matrix was good and our model seemed to fit perfectly. However, for the regression, our results were so bad that we realize how poor was the features selection.</p>
+      <br>
+      <p>However, this project had a very short deadline and we had to go on. Also, we started the prediction phase.                      </p>
+      <br>
+      <p>The classifier allowed us to find out whether a client would be willing to buy (1) each offer or not (0) and the regressors gave us the amount of expected revenue for each client per offer. </p>
+      <br>
+      <p>As I mentioned before the revenue prediction was not realistic, however we had a more reliable list of potential clients.</p>
+      <br>
+      <p>With those predictions, we found over 100 clients who were potentially interested in one or more of the three different offers (MF, CC and CF), we decided to select the clients who were only (potentially) interested in one of the three offers and then we sorted them by the expected revenue. We selected the 100 most promising clients by choosing the ones with the higher potential revenue. 
+      <B>Finally, we printed a list of these clients; with the offer they would be interested in and the revenue they could produce.</B></p>
+      <br>
+      <p>It was a very demanding project since we had to understand everything by ourselves in a really short amount of time. But finally it was really rewarding to finish it (even with poor regression results), because we realised how much we learned from the exercise.</p>
+      <br>
+      <br>
+      <br>
+    </div> 
+  </div>
+<div class="zone">
+      <p>I ❤️ machine learning </p>
+</div>
+<!-- Footer section -->
+  <div class="footer">
+    <p>Made with ❤️ by Garance C.</p>
+    <a href="https://www.linkedin.com/in/garance-caze/" target="_blank" class="fbutton">My Linkedin</a>
+    <a href="pythonpj.html" class="fbutton">Back to top</a>
+  </div>
+</body>
+</html>   
