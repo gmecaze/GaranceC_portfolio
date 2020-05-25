@@ -121,15 +121,23 @@ color: black;
   opacity: .7;
 }
 
-
+.subcontainer {
+  display: grid;
+  align-content: center;
+  padding: 50px;
+}
 
 /* SLIDER*/ 
 
+
 #dvslider {
     position: relative;
-    max-width: 100%;
+    left:12%;
+    width:77%;
+    border-radius: 6px;
     overflow: hidden;
-    height: 500px;
+    max-height: 900px;
+    min-height:500px;
 }
 
 #dvslides {
