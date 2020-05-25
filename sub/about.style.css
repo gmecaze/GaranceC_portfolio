@@ -101,6 +101,7 @@ text-align: center;
 .zone2 {
   display: grid;
   background: white;
+  opacity:1;
   grid-auto-rows: minmax(70px, auto);
   grid-template-columns: repeat(3, 33%);
   text-align: center;
