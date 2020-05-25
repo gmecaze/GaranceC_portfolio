@@ -1,6 +1,7 @@
 body {
   font-family: Overpass;
   margin: 0;
+  background: white;
 }
 
 h1, h2, h3 {
@@ -67,9 +68,11 @@ color: black;
   background-image: url(../images/deus.jpg);
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
   text-align: center;
+  padding-bottom: 150px;
+  padding-top: 150px;
   border-bottom: 5px solid #fdcb59;
+  width:100%;;
 }
 
 
@@ -98,9 +101,9 @@ color: black;
 
 #slider {
     position: relative;
-    left: 150px;
-    width: 885px;
-    border-radius: 4px;
+    left: 12%;
+    width: 77%;
+    border-radius: 6px;
     overflow: hidden;
     height: 500px;
 }
@@ -317,6 +320,7 @@ input[type="radio"]#play:checked ~ div#slides {
   background: #2b3c4b;
   text-align: center;
   padding: 24px 0;
+  height:200px;
 }
 
 .footer p {
