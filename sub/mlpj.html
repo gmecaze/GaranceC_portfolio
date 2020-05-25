@@ -17,7 +17,7 @@
       <li><a href="../index.html">Home</a></li><li><a href="skillspage.html">Skills</a></li><li><a href="projectspage.html">Projects</a></li><li><a href="about.html">About</a></li>
       </ul>
   </div>
- <div class="mlbanner">
+  <div class="mlbanner">
     <h1>Machine Learning Tools</h1>
   </div>
   <!-- Container -->
@@ -34,9 +34,9 @@
       <br>
       <p>This project is an in-class project using regression to predict housing price value in California.</p>
       <br>
-      <div class="image">
+        <div class="image">
         <img width="800" height= "300" src="../images/flowdataiku.jpg" alt="flowdataiku"/>
-      </div>
+        </div>
       <br>
       <p>This diagram represents every single step made from loading datasets to predicting median house value for the <i>"housing to predict"</i> dataset.</p>
       <br>
@@ -66,22 +66,22 @@
       <br>
       <h4><i>Scatter Map</i></h4>
       <br>
-      <div class="mlcard">
-        <div class='mlsubcarda'>
-        <figcaption>Correlation Map</figcaption>
-        <br>
-        <img src="../images/scattermap.jpg" alt="" align=left>
+        <div class="mlcard">
+          <div class='mlsubcarda'>
+            <figcaption>Correlation Map</figcaption>
+            <br>
+            <img src="../images/scattermap.jpg" alt="" align=left>
+          </div>
+          <div class='mlsubcardb'>
+            <br>
+            <p> Here, we made a scatter map using 'GeoPoint' and 'median_housing_price_value'.</p> 
+            <br>
+            <p>This confirmed the correlation between housing price value and the location of houses.</p>
+            <br>
+            <p>Indeed, we can clearly see that the nearest the house is from the ocean, the most expensive it is. </p>
+          </div>
         </div>
-        <div class='mlsubcardb'>
-          <br>
-          <p> Here, we made a scatter map using 'GeoPoint' and 'median_housing_price_value'.</p> 
-          <br>
-          <p>This confirmed the correlation between housing price value and the location of houses.</p>
-          <br>
-          <p>Indeed, we can clearly see that the nearest the house is from the ocean, the most expensive it is. </p>
-        </div>
-      </div>
-        <br>
+      <br>
       <h4><i>Scatter Plot</i></h4>
       <br>
         <div class='image2'>
@@ -102,35 +102,35 @@
       <br>
       <p>Then, we splitted the data into <i>historical</i> data and <i>to predict</i> data by filtering the rows where <i>_median_housing_price_value_</i> was defined. This enabled us to have two different datasets: one to train our model, and the other to predict the price value.</p>
       <br>
-      <div class="mlcard">
-        <div class='mlsubcarda'>
-        <figcaption>Results</figcaption>
-        <br>
-        <img src="../images/result.jpg" alt="" align=left>
+        <div class="mlcard">
+          <div class='mlsubcarda'>
+            <figcaption>Results</figcaption>
+            <br>
+            <img src="../images/result.jpg" alt="" align=left>
+          </div>
+          <div class='mlsubcardb'>
+            <br>
+            <p>Before training models, we chose to output the RMSE (Root Square Mean Error) metric. Then, we trained the model using 'Quick models' from the Lab.</p>
+            <br>
+            <p>On this graph, the blue line represents RMSE for the Ridge(L2) Regression model, whereas the orange line represents Random Forest training model. We can see here that Random forest has a longer computing time, however, it is a better model for predicting housing value since its RMSE is lower. </p>
+            <br>
+          </div>
         </div>
-        <div class='mlsubcardb'>
-          <br>
-          <p>Before training models, we chose to output the RMSE (Root Square Mean Error) metric. Then, we trained the model using <i>'Quick models'</i> from the Lab.</p>
-          <br>
-          <p>On this graph, the blue line represents RMSE for the Ridge(L2) Regression model, whereas the orange line represents Random Forest training model. We can see here that Random forest has a longer computing time, however, it is a better model for predicting housing value since its RMSE is lower. </p>
-          <br>
-        </div>
-      </div>
       <br>
-      <div class='image3'>
+        <div class='image3'>
           <figcaption>Model's Scatter Plot</figcaption>
           <br>
           <img src="../images/scatterplot.jpg" alt="" align=left>
-      </div>
+        </div>
       <br>
       <p> This scatter plot enabled us to see the correlation between predicted values and actual values. On this graph, the closest is a point from the line ; the smaller is the error in prediction. Since points are well partitioned around the line, we can say that the prediction is rather well made. Therefore, we chose this model for predicting median house value on 'topredict'. </p> 
       <br>
-        <br>
-      <div class='image2'>
+      <br>
+        <div class='image2'>
           <figcaption>Decision Tree Example</figcaption>
           <br>
           <img src="../images/RF.jpg" alt="" align=left>
-      </div>
+        </div>
       <br>
       <p> This decision tree is one tree of the random forest. It confirmed our correlation study: two of the most important variables were : <i>median income</i> and <i>ocean proximity</i>. This was also confirmed by the result page of our training. </p> 
       <br>
@@ -151,19 +151,19 @@
       <br>
       <p>Coffee-bot is my first Chatbot. It was made in class using IBM Watson assistant. It deals with coffee related questions: ordering a coffee, asking for the price, menu or nearest café.</p>
       <br>
-      <div class="mlcard2">
-        <div class='mlsubcarda3'>
-        <figcaption>Coffe-Bot</figcaption>
-        <br>
-        <video controls="controls" src="../video/coffeebot.mp4">Tableau Software</video>
+        <div class="mlcard2">
+          <div class='mlsubcarda3'>
+            <figcaption>Coffe-Bot</figcaption>
+            <br>
+            <video controls="controls" src="../video/coffeebot.mp4">Tableau Software</video>
+          </div>
+          <div class='mlsubcardb2'>
+            <figcaption>Extract of the Dialog</figcaption>
+            <br>
+            <img src="../images/dialog1.jpg" alt="" align=left>
+            <br>
+          </div>
         </div>
-        <div class='mlsubcardb2'>
-        <figcaption>Extract of the Dialog</figcaption>
-        <br>
-        <img src="../images/dialog1.jpg" alt="" align=left>
-          <br>
-        </div>
-      </div>
       <br>
       <p>In the video, you can see short conversations with Coffee-Bot, whereas on the dialog diagram you can see how each intent is ordered to enable Coffee-bot to understand your request and answer properly. As you can see, each sub-question (price, location, menu) <i>'jumps back to'</i> ordering a beverage. This was made on purpose to incite users to order something. </p>
     </div>     
